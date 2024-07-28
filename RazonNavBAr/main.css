@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@font-face {
+    font-family: netflix;
+    src: url(./assets/fonts/NetflixSans-Medium.otf);
+}
+
+*{
+    font-family: netflix;
+}

@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@font-face {
+    font-family: netflix;
+    src: url(./assets/fonts/NetflixSans-Medium.otf);
+}
+
+*{
+    font-family: netflix;
+}
+.btn{
+  @apply bg-bookmark-purple text-white px-9 py-3 rounded-md capitalize font-semibold hover:opacity-90 ease-in duration-200;
+}
+.bg-custom-gradient {
+    background-image: linear-gradient(to right, #01051E 10%, #04081f 30%, #01030f 90%);
+  }
+/* .btn {
+    @apply shadow-md py-3 px-6 rounded-md transition duration-300;
+  }
+  
+  .btn-purple {
+    @apply bg-bookmark-purple text-white;
+  }
+  
+  .btn-white {
+    @apply bg-bookmark-white;
+  } */
+
+  @keyframes moveBlob1 {
+    0% {
+        transform: translate(0, 0);
+    }
+    50% {
+        transform: translate(10px, 10px);
+    }
+}
+
+@keyframes moveBlob2 {
+    0% {
+        transform: translate(0, 0);
+    }
+    50% {
+        transform: translate(-10px, -10px);
+    }
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+.blob1 {
+    @apply w-80 h-80 bg-color-blob absolute top-0 -left-5 -z-10 blur-2xl opacity-30 overflow-hidden rounded-full;
+}
+
+.blob2 {
+    @apply w-72 h-72 bg-color-secondary absolute bottom-0 -right-0 -z-10 blur-2xl opacity-30 overflow-hidden rounded-full;
+   
+}

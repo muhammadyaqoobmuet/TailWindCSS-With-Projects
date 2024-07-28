@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@font-face {
+    font-family: netflix;
+    src: url(./assets/fonts/NetflixSans-Medium.otf);
+}
+
+*{
+    font-family: netflix;
+}
+
+.btn {
+    @apply shadow-md py-3 px-6 rounded-md transition duration-300;
+  }
+ .btn-purple {
+    @apply bg-[#4F5E96] text-white;
+  }  
+ .btn-ori {
+    @apply bg-[#242A45] text-white;
+  }  
+ 
+  
+  .btn-white {
+    @apply bg-bookmark-white;
+  }

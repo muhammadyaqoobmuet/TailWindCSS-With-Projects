@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="main.css">
+</head>
+<body>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+    h1{
+      font-family: 'Noto Sans', sans-serif;
+    }
+
+    .setfonts{
+      font-family: 'Noto Sans', sans-serif;
+    }
+    a{
+      font-family: 'Noto Sans', sans-serif;
+        position: relative;
+    }
+
+    a::after{
+      content: "";
+      position: absolute;
+      width: 100%;
+      /* border-bottom: 0px solid white; */
+      width: 100%;
+      height: 10px;
+    
+
+      bottom: 0;
+      left: 0;
+      transition: 0.3s ease;
+      transform: scaleX(0);
+      
+
+    }
+
+    a:hover::after{
+      border-bottom: 1px solid white;
+      transform: scaleX(1);
+    }
+
+    @keyframes underline{
+      0%{
+        width: 0%;
+        left: 0;
+        
+       
+    }
+    50%{
+        width: 100%;
+        left:0;
+        
+
+    }
+    100%{
+        width: 0%;
+        left: 100%;
+      
+        
+    }
+    }
+  </style>
+
+  <div class="overflow-x-hidden w-full">
+
+    <header class=" h-80px">
+      <div class="w-full h-full  bg-[#0782C0]">
+        <nav class="flex bg-[#0782C0] w-full items-center  pl-8 pr-16 justify-between pt-[17px] pb-[17px] max-w-[100rem] mx-auto ">
+     
+     
+          <!-- logo -->
+          <div class="flex items-center">
+            <h1 class="text-white  font-bold text-2xl ">Updrafts</h1>
+          </div >
+    
+          <!-- nav bars option -->
+          <div class=" text-yellow-50 flex items-center space-x-10">
+            <a href="">Home</a><a href="">Features</a><a href="">Faq</a> <button class="bg-white text-lightblue rounded-full text-[1rem] pl-2 pr-2 setfonts py-[0.25rem]  px-[1rem] w-[75px] hover:scale-110 transition-all transition,3s ">Login </button>
+          
+          </div>
+          
+        </nav>
+      </div>
+    </header>
+
+    <section class="w-full bg-gradient-to-r from-[#0782C0] via-[#0782C0] to-[#0C97D8]  relative h-[500px] pl-[4.5rem]  ">
+        <div class="flex  max-w-[90rem] mx-auto relative   ">
+            <!-- left -->
+           <div class="inline-flex flex-col justify-center max-w-[573px] h-[470px] mt-[-2rem]  ">
+            <div class="">
+              <h1 class="text-5xl text-white font-extrabold setfonts">Design & Prototype with Tailwind CSS</h1>
+            </div >
+              <div class="mt-[17px] mb-[25px]"><p class="text-white text-[18px] setfonts opacity-80 ">Thousands of developers — working as freelance, for startups, or enterprises — use Updrafts.app Tailwind Studio to create their designs and prototypes, and share them with their clients.</p></div>
+              <div> <button class="bg-white rounded-full pl-2 pr-2"> <span class="text-lightblue">Start now</span> -- its free &gt;</button></div>
+              <!-- icons -->
+              <div class="flex flex-col">
+                <p>used by</p>
+                
+              </div>
+           </div>
+
+           <!-- right -->
+           <div class="pt-3 flex relative ml-32  ">
+            <img class="object-cover " src="https://updrafts.app/heading-image.png" alt="">
+           </div>
+        </div>
+
+    </section>
+  
+
+
+  </div>
+</body>
+</html>

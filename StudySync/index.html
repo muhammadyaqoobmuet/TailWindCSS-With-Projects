@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+</head>
+<body>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;500;600;700&display=swap');
+  .setfonts{
+    font-family: 'Inter', sans-serif;
+  }
+  .setme  a{
+      position: relative; 
+      width: 100%;
+    }
+   .setme a::after{
+      content: "";
+      width: 100%;
+      height: 3px;
+      position: absolute;
+      bottom: 0;
+      z-index: 10;
+      left: 0;
+        background-color: #6259D9;
+        transition: ease-in 0.2s;
+        transform: scaleX(0);
+    }
+
+    .setme a:hover::after {
+  transform: scaleX(1);
+  
+}
+.animatem{
+      animation: fadein 0.9s ease forwards;
+      opacity: 0;
+  
+
+}
+.animatemetw{
+      animation: fadein 1s ease-in forwards;
+      opacity: 0;
+  
+
+}
+@keyframes fadein {
+  0%{
+    transform: translateX(-100%);
+    opacity: 1;
+  }
+  100%{
+    transform: translateX(0);
+    opacity: 1;
+
+  }
+}
+
+  </style>
+
+<div class="w-full">
+  <header class="w-full relative border-b">
+    <nav class=" flex items-center justify-between max-w-[1180px] mx-auto py-4 px-2  ">
+     <!-- div home logo -->
+     <div>
+      <a href="#" class="flex items-center text-2xl font-bold gap-[0.635rem]"  >
+        <img width="30px" src="./assets/images/pen-svgrepo-com.svg" alt="">
+        StudySync
+    </a>
+     </div>
+
+     <!-- anchor tags -->
+     <div class=" hidden text-[1rem]  gap-[1rem]  sm:flex md:text-[1.4rem]  items-center  font-[500] text-gray-500  setme  ">
+      <a class="transition-all  hover:text-blue-800" href="#">Home</a><a  class="transition-all hover:text-blue-800"  href="">Features</a><a class="transition-all hover:text-blue-800"   href="">Pricing</a><a class="transition-all hover:text-blue-800"   href="">Blog</a><a  class="transition-all hover:text-blue-800"  href="">About</a>
+     </div>
+
+     <div class="flex items-center">
+      <a href="">
+          <button class="hidden sm:block bg-gradient-to-r from-indigo-800 from-10% via-blue-700 via-50% to-blue-800 to-90% text-white py-[0.29rem] px-[0.55rem] hover:from-indigo-900 hover:via-sky-800 hover:to-blue-900 hover:transition-all ease duration-75 rounded hover:scale-110  ">
+              Contact Us
+          </button>
+      </a>
+  </div>
+
+  <div class="sm:hidden  text-4xl" >
+    <i class='bx bx-menu'></i>
+  </div>
+  
+    </nav>
+  </header>
+
+
+  <!-- hero section -->
+  <section class="w-full border  mt-8 py-5 sm:mt-10 ">
+      <div class="max-w-[1180px] mx-auto flex-col-reverse  flex sm:flex-row gap-10 justify-between">
+          <!-- right -->
+          <div class=" flex flex-col w-[55/10] items-start justify-center space-y-4 px-2 animatem mx-auto ">
+
+              <p class="font-[400] opacity-90 setfonts cursor-pointer  text-[#2C3381]">very pround to introduce</p>
+              <h1 class="text-[3.50rem] leading-[3rem] font-bold">Seamles Learning  <br>for Brighter Future</h1>
+              <p class="text-[0.8rem] max-w-[28rem] text-gray-500 setfonts">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore accusamus quas ut, sunt suscipit dolores temporibus illum obcaecati quae ab, omnis repellendus quaerat dolorem architecto.</p>
+              <!-- buttons -->
+              <div class="flex gap-3 mx-auto ">
+                <a href="#"><button class="bg-[#6259D9] text-white border py-[0.25rem] px-[0.55rem] rounded">Start Now</button></a>
+              <a href="#"><button class="bg-gray-600 text-white border py-[0.25rem] px-[0.55rem] rounded">Take Tour</button></a>
+              </div>
+
+          </div>
+          <!-- left -->
+          <div class="py-3 rounded-[0.5rem] pr-2 ">
+            <img class="object-contain rounded-[0.5rem] max-w-[70%] self-center mx-auto  sm:max-w-[80%]"    src="https://www.bhmpics.com/downloads/anime-studying/9.435c5d656baf53aafb80dc386f9fdddb--manga-anime-anime-art.jpg" alt="">
+          </div>
+      </div>
+  </section>
+
+  <div class="w-full flex flex-col items-center animatemetw ">
+      <h3 class="text-2xl py-3">Trusted By</h3>
+      <div class="grid grid-cols-3  w-1/2 ">
+        <div class="flex justify-center items-center bg-[#EDECED]">
+          <img width="40px" src="./assets/images/google.svg" alt="">
+          <span class="text-[1rem] px-2 py-4 " >Google</span>
+        </div>
+        <!-- second -->
+        <div class="flex justify-center items-center bg-[#EDECED]">
+          <img width="40px" src="./assets/images/microsoft.svg" alt="">
+          <span class="text-[1rem]  py-4 px-2" >microsoft</span>
+        </div>
+       <!-- third -->
+       <div class="flex justify-center items-center bg-[#EDECED]">
+        <img width="40px" src="./assets/images/LL.svg" alt="">
+        <span class="text-[1rem] px-2  py-4 " >LinkedIn.</span>
+      </div>
+     
+      </div>
+  </div>
+
+  <!-- new section -->
+  <section></section>
+</div>
+    
+
+</body>
+</html>

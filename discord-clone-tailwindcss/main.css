@@ -1,0 +1,57 @@
+/* Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Open+Sans&family=Roboto:wght@700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*====== Base Style ======*/
+@layer base {
+  h1,
+  h2 {
+    @apply font-bold font-blackhans;
+  }
+
+  body {
+    @apply font-opensans;
+  }
+
+  h3 {
+    @apply text-2xl md:text-3xl lg:text-4xl xl:text-5xl pb-5 tracking-wide font-bold font-roboto;
+  }
+
+  p {
+    @apply text-sm md:text-base lg:text-lg xl:text-xl;
+  }
+}
+
+/*======== Components Style ========*/
+@layer components {
+  .navLink {
+    @apply hover:underline font-semibold;
+  }
+
+  .btn-sm {
+    @apply bg-white py-2 px-4 text-black rounded-3xl font-medium hover:text-primary hover:shadow-lg hover:shadow-black/30 transition duration-300;
+  }
+
+  .btn {
+    @apply py-4 px-8 rounded-full text-base lg:text-lg xl:text-xl hover:shadow-lg hover:shadow-black/20 transition duration-200;
+  }
+
+  .btn-white {
+    @apply bg-white text-black hover:text-primary;
+  }
+
+  .btn-black {
+    @apply bg-black text-white;
+  }
+
+  .btn-blue {
+    @apply bg-primary text-white w-full sm:w-80;
+  }
+
+  .footerLink {
+    @apply hover:underline text-sm lg:text-base;
+  }
+}
